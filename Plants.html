@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+.bar {
+	position: absolute;
+	background-color: lightblue;
+	width: 100%;
+	height: 50px;
+	left: 0px;
+	top: 300px;
+	z-index: 20;
+}
+.menu {
+	position: absolute;
+	background-color: lightblue;
+	height: 50px;
+	left: 50%;
+	margin-left: -320px;
+}
+
+.menu a {
+	display: inline;
+	color: black;
+	padding: 15px 16px;
+	text-align: center;
+	text-decoration: none;
+	float: left;
+	height: 20px;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+.menu a:hover {
+	color: gray;
+}
+
+.menu a.active {
+	color: gray;
+}
+
+.dropdown1 {
+	display: inline-block;
+}
+
+.dropdown-content1 {
+	display: none;
+	position: absolute;
+	background-color: #9ec5d6;
+	max-width: 160px;
+	top: 50px;
+	z-index: 1;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown1:hover .dropdown-content1 {
+	display: block;
+}
+
+.dropdown2 {
+	display: inline-block;
+}
+
+.dropdown-content2 {
+	display: none;
+	position: absolute;
+	background-color: #9ec5d6;
+	min-width: 170px;
+	top: 50px;
+	z-index: 1;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	height: 130px;
+}
+
+.dropdown2:hover .dropdown-content2 {
+	display: block;
+}
+
+#GFS_Logo {
+	text-align: center;
+}
+
+#Title {
+	position: absolute;
+	top: 355px;
+	left: 50%;
+	margin-left: -200px;
+	width: 400px;
+	border-color: #1fd0ef;
+	border-style: solid;
+	border-width: 5px;
+	text-align: center;
+	background-color: #2baad8;
+}
+
+#TitleText {
+	color: white;
+}
+
+#Clara_Research {
+	position: absolute;
+	top: 450px;
+	left: 50%;
+	background-color: #1fd0ef;
+	width: 800px;
+	padding: 0px 30px;
+	margin-left: -400px;
+	border-style: solid;
+	border-color: #2baad8;
+	border-width: 5px;
+}
+
+#Matthew_Research {
+	position: absolute;
+	top: 1150px;
+	left: 50%;
+	background-color: #1fd0ef;
+	width: 800px;
+	padding: 0px 30px;
+	margin-left: -400px;
+	border-style: solid;
+	border-color: #2baad8;
+	border-width: 5px;
+}
+
+#Water_Testing {
+	position: absolute;
+	top: 2450px;
+	left: 50%;
+	background-color: #1fd0ef;
+	width: 800px;
+	padding: 0px 30px;
+	margin-left: -400px;
+	border-style: solid;
+	border-color: #2baad8;
+	border-width: 5px;
+	height: 1300px;
+}
+
+#Moss {
+	position: absolute;
+	top: 3800px;
+	left: 50%;
+	background-color: #1fd0ef;
+	width: 800px;
+	padding: 0px 30px;
+	margin-left: -400px;
+	border-style: solid;
+	border-color: #2baad8;
+	border-width: 5px;
+	height: 400px;
+}
+
+table, th, td {
+	border: 1px solid blue;
+	border-spacing: 0px;
+	background-color: #75beef;
+	text-align: center;
+}
+
+th, td {
+	padding: 10px 10px;
+}
+
+#Plant_Facts {
+	position: absolute;
+	top: 4300px;
+	left: 50%;
+	background-color: #1fd0ef;
+	width: 800px;
+	padding: 0px 30px;
+	margin-left: -400px;
+	border-style: solid;
+	border-color: #2baad8;
+	border-width: 5px;
+	height: 1800px;
+}
+
+#Plant_Fact_1 {
+	position: absolute;
+	width: 300px;
+	border: 1px solid black;
+	padding: 10px 10px;
+	top: 150px;
+	left: 300px;
+	transform: rotate(-20deg);
+}
+
+#Plant_Fact_2 {
+	position: absolute;
+	width: 200px;
+	border: 1px solid black;
+	padding: 10px 10px;
+	top: 500px;
+	left: 350px;
+}
+
+#Plant_Fact_3 {
+	position: absolute;
+	width: 130px;
+	border: 1px solid black;
+	padding: 10px 10px;
+	top: 850px;
+	left: 50px;
+	transform: rotate(-15deg);
+}
+
+#Plant_Fact_4 {
+	position: absolute;
+	width: 200px;
+	border: 1px solid black;
+	padding: 10px 10px;
+	top: 1150px;
+	left: 400px;
+
+}
+
+#Plant_Fact_5 {
+	position: absolute;
+	width: 150px;
+	border: 1px solid black;
+	padding: 10px 10px;
+	top: 1500px;
+	left: 150px;
+	transform: rotate(5deg);
+}
+
+#sources {
+	position: absolute;
+	top: 6200px;
+	left: 50%;
+	background-color: #1fd0ef;
+	width: 800px;
+	padding: 0px 30px;
+	margin-left: -400px;
+	margin-bottom: 100px;
+	border-style: solid;
+	border-color: #2baad8;
+	border-width: 5px;
+	height: 300px;
+}
+
+#main {
+	width: 1000px;
+	height: 7000px;
+}
+
+</style>
+</head>
+<body id="body" onscroll="scroll()">
+ 
+ <div id="main">
+ <!--logo-->
+<div id="GFS_Logo">
+	<img src="GFS.png" width="233" height="184" alt="GFS">
+</div>
+
+<!--Title-->
+<h1 style="text-align: center;">Santa Cruz Island For Kids</h1>
+
+<!--Menu Bar-->
+<div id="bar" class="bar">
+	<div class="menu">
+		<a href="index.html">Home</a>
+		<a href="Birds.html">Birds</a>
+		<a href="DFMP.html">DFMP</a>
+		<a class="active" href="Plants.html">Plants</a>
+		<!--Dropdown feeding groups-->
+		<div class="dropdown1">
+			<a href="javascript:void(0)" class="dropdownbtn1">Feeding Groups</a>
+			<div class="dropdown-content1">
+				<a href="Predators.html">Predators</a>
+				<a href="Shredders.html">Shredders</a>
+				<a href="Collectors.html">Collectors</a>	
+			</div>	
+		</div>
+		<!--Dropdown Geomorphology-->
+		<div class="dropdown2">
+			<a href="javascript:void(0)" class="dropdownbtn2">Geomorphology</a>
+			<div class="dropdown-content2">
+				<a href="Stream%20Ecology.html">Stream Ecology</a>		
+				<a href="Stream%20Geomorphology.html">Stream Geomorphology</a>		
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="Title"><h1 id="TitleText">Santa Cruz Island Plants</h1></div>
+
+<div id="Clara_Research"><u style="font-size: 30px;text-align: center;">Clara's Reaserch: 5/11/17</u><p>On May 11, 2017 I did research at Canada del puerto creek on Santa Cruz Island. One of the observations that I made was that green leaves  float, and brown leaves sink. This was very interesting to me. A question that I asked myself was <q>What do the leaves that are green have that the leaves that are brown don't?</q> One idea that I had was that when leaves get brown they might lose oxygen therefore they sink. I was so intrigued by my observation that when I got back to school I looked up the answer. According to <q>AP Biology - Investigation: Photosynthesis</q>  It states <q>The spongy mesophyll layer of leaves is normally infused with gases, oxygen and carbon dioxide. Leaves (or disks cut from leaves) will normally float in water because of these gases. If you draw the gases out from the spaces, then the leaves will sink because they become more dense than water.</q>  This part of the passage is saying that it is the gases that help it float, but in another part of the passage it says <q>As photosynthesis proceeds, oxygen accumulates in the air spaces of the spongy mesophyll and the leaf becomes buoyant and floats.</q>  in my opinion it is saying that oxygen is indeed a part of leaves floating, therefore I'm half right...I think.
+</p><a href="https://biologycorner.com/worksheets/AP_Lab5_photosynthesis.html
+">https://biologycorner.com/worksheets/AP_Lab5_photosynthesis.html
+</a><br><img src="Screen%20Shot%202017-06-01%20at%2011.55.27%20AM.png" width="169" height="169" style="display: inline-block;padding-top: 30px;"><img src="Screen%20Shot%202017-06-01%20at%2012.02.09%20PM.png" width="170" height="168" style="display: inline-block;padding-left: 80px;">a</img></div>
+
+<div id="Matthew_Research"><h2>Matthew's Research: 5/30/17</h2><p>A portion of our group found all of our data by searching in an area with dimensions of about 10 feet by 10 feet. We did this research at the Canada del puerto creek on Santa Cruz Island, California, U.S.A.  In our area there was a small island made of dirt that we believe started the growth of the plants in the water around the island.  There was a small rocky outcropping on the far side of the small island in the creek.  There was a thin band of creek that went through the area between the island and the rocks.  We found many frogs in this area.  We think the  frogs like to live there because there were many places for them to hide.  There was also a vast amount of food that was available for the frogs. We found a  fallen branch of a willow tree that had grown roots, and was starting to grow a new tree.  There was a lot of sunlight.  Yet, there was not a lot of moss.  We found a couple of different plants in the area that we researched.  These plants included two plants that grew in or under the water, two that lived in and out of water, and one that only grew out of water.  One of the plants we found had a white, wafer like structure inside the leaves of the plant.  I found this interesting because it made me think about what the <q>wafer like insides</q> are used for in the plant.  I thought that the wafer like insides are used to transfer water and sugars through their leaves and structure.
+</p><img src="Screen%20Shot%202017-06-01%20at%201.13.16%20PM.png" width="428" height="310"><img src="Screen%20Shot%202017-06-01%20at%201.18.16%20PM.png" width="445" height="337"><p>This is an example of the plant that  we found with the wafer like structure on the inside of its leaves.  This is not the area that we researched.<br>Photo Credit: GFS SmugMug archive.
+</p></div>
+
+<div id="Water_Testing"><h3 style="font-size: 30px;text-align: center;">
+<u>Water Testing</u></h3><p style="font-size: 20px;text-align: center;">By: Natalie 			Demboski</p><p>Water testing is important because all the different elements in the water can affect how much plants grow or not grow, erosion and if having plants in the body of water can affect the water. The tests I did were for phosphates, pH, turbidity, nitrates, water temperature and dissolved oxygen. The phosphate test, the pH test and the dissolved oxygen test we did in two different places, that were actually the same stream, but we just went to two different sections/places.</p><br><p><b>Phosphates=</b>A nutrient needed by all plants to grow. High level of phosphate can lead to overgrowth of plants, increase bacterial activity, and decreased oxygen.
+</p><p><b>Phosphate Test Results:</b> Test #1 proved that the water sample had 1ppm ( Parts Per Million) Test #2 proved that the water sample had 2ppm
+</p><p><b>pH= </b>Measures the acidic, or basic quality of water. The pH scale measures from 0 which is very acidic to 14 which is basic. The pH of water is usually between 6.5 or 8.2. Most aquatic organisms are used to their pH level and if the pH level in their stream changes ever so slightly they may die.
+</p><p><b>pH Test Results: </b>Test #1 proved that the level of pH in the water sample was 6 ppm, which on the usual scale,is more acidic. 
+Test #2 proved that the level of pH in the other water sample was 7 ppm, which is about in the middle of the acidic and basic range, but is still considered more acidic.
+</p><p><b>Turbidity= </b>Measures the clarity of water.  Turbid water is caused by silt, clay and microorganisms
+</p><p><b>Turbidity Test Results: </b>Test #1:  0  JTU which is not very turbid and is water with algae and rocks. Test #2:  50 JTU Which is a medium amount of turbidity and is water with sand, and without algae.
+</p><p><b>Nitrates= </b>A food source needed by all aquatic plants and animals to survive. Dead plants and animals urine and feces release nitrates into the water. Nitrates decrease the amount of oxygen because nitrates promote bacterial decomposition. 
+</p><p><b>Nitrate Test Results: </b>This test proved that the water sample has 5 ppm.</p><p><b>Dissolved Oxygen= </b>Is an important part to the health of the aquatic ecosystems. The more dissolved oxygen that there is, the healthier the body of water. Cold water can hold a lot more dissolved oxygen than warmer water.
+</p><p><b>Dissolved oxygen Test Results: </b>We all tested for dissolved oxygen and got zero when there was clearly animal and plant life, so either there was just too much phosphate in the water, something was wrong with our testing kits, or the water was too warm
+</p><p><b>Water Temperature: </b>The water temperature in the nitrate test, the turbidity test, the 2nd pH test, and the 2nd phosphate test was 24 celsius with algae, and 21 celsius without algae.
+</p><br><br><br><br><br>
+<div style="width: 300px">
+	<p>This is a picture of algae, zoomed by a microscope. I noticed that the algae was floating on top of the water in big clumps, in the streams that we passed. The algae was rough, and felt kind of like it was braided.
+	</p>
+</div>
+
+<div style="position: relative;left: 300px;top: -150px;">
+	<img src="Screen%20Shot%202017-06-01%20at%206.26.29%20PM.png" width="270" 	height="303">
+</div>
+</div>
+
+<div id="Moss">
+<u><p style="text-align: center;font-size: 30px;">Moss is a 
+  Freshwater algae</p></u><p style="text-align: center;font-size: 20px;">By Megan Garner</p><p>	You might be wondering  what  a saltwater algae is it is just algae. What I noticed comparing my water samples and plant reachsearch together where there  was no moss the turbidity was 50  jtu and where there was moss the turbidity was 0 jtu I wonder if the moss makes the water cleaner.  I think it might have some chemicals in the  moss and what I found out was that it has not been solved yet.
+</p>
+<table>
+	<tr>
+		<th></th>
+		<th>Temp</th>
+		<th>pH</th>
+		<th>Dissolved Oxygen</th>
+		<th>Turbidity</th>
+		<th>Phosphate</th>
+		<th>Nitrate</th>
+	</tr>
+	<tr>
+		<td>#1</td>
+		<td>24c</td>
+		<td>6ppm</td>
+		<td>0ppm</td>
+		<td>50jtu</td>
+		<td>1ppm</td>
+		<td>5ppm</td>
+	</tr>
+	<tr>
+		<td>#2</td>
+		<td>11c</td>
+		<td>7ppm</td>
+		<td>0ppm</td>
+		<td>0jtu</td>
+		<td>2ppm</td>
+		<td>5ppm</td>
+	</tr>
+</table>
+</div>
+<div id="Plant_Facts">
+	<p style="text-align: center;font-size: 30px"><u>Island Plant Facts</u></p>
+	<div>
+		<img src="../Screen%20Shot%202017-06-02%20at%209.18.19%20AM.png" width="178" height="226" alt="Screen Shot 2017-06-02 at 9.18.19 AM">
+	</div>
+	<div id="Plant_Fact_1">
+		<p>This is a picture of eucalyptus trees. Did you know that the eucalyptus tree is not native the island and people are working to remove them, but they are leaving some, due to  the animals that have made their home in the eucalyptus trees.<br><i>Photo credit: GFS SmugMug archive</i></p>
+	</div>
+	<div style="position: absolute;top: 500px;transform: rotate(15deg);">
+	<img src="Screen%20Shot%202017-06-02%20at%209.32.49%20AM.png" width="292" height="208" alt="Screen Shot 2017-06-02 at 9.32.49 AM">
+	</div>
+	<div id="Plant_Fact_2">
+		<p>This is a picture of an Island Deer Mouse perched atop the endangered Silver Carpet flower native to the northern Channel Islands.<br><br>Photo Credit: <a href="https://www.nps.gov/chis/learn/nature/island-deer-mouse.htm">https://www.nps.gov/chis/learn<br>/nature/island-deer-mouse.htm</a></p>
+	</div>
+	<div style="position: absolute;top: 800px;left: 300px;">
+		<img src="Screen%20Shot%202017-06-02%20at%209.42.41%20AM.png" width="337" height="216" alt="Screen Shot 2017-06-02 at 9.42.41 AM">
+	</div>
+	<div id="Plant_Fact_3">
+		<p>This is a picture documenting the Lilium Humboldt lily, native to the islands.<br><br>Photo Credit: <a href="http://keywordsuggest.org/gallery/1299251.html">http://keywordsugg<br>est.org/gallery/129<br>9251.html</a></p>
+	</div>
+	<div style="position: absolute;top: 1150px;left: 50px;transform: rotate(5deg);">
+		<img src="Screen%20Shot%202017-06-02%20at%2010.00.51%20AM.png" width="191" height="269" alt="Screen Shot 2017-06-02 at 10.00.51 AM">
+	</div>
+	<div id="Plant_Fact_4">
+		<p>This picture is of the native santa cruz island Winged Rockcress. The Winged Rockcress scientific name is a Sibara Filifolia. According to scientists its condition is endangered. Photo and info credit: <a href="http://santacruz.nrs.ucsb.edu/natural-resources/endemic-vascular-plants/santa-cruz-island-rock-cress">http://santacruz.nrs.ucsb.edu/<br>natural-resources/endemic-vascular-plants/santa-cruz-island-rock-cress</a></p>
+	</div>
+	<div style="position: absolute;top: 1500px;left: 400px;">
+		<img src="Screen%20Shot%202017-06-02%20at%2010.22.39%20AM.png" width="266" height="237" alt="Screen Shot 2017-06-02 at 10.22.39 AM">
+	</div>
+	<div id="Plant_Fact_5">
+		<p>  This flower is the pink flowered buckwheat. It has white flowers that turn pink then brown. They act as dried flowers,  but are actually not dead. <a href="http://www.laspilitas.com/nature-of-california/plants/277--eriogonum-arborescens">http://www.laspilitas.c<br>om/nature-of-california/plants/277--eriogonum-arborescens</a></p>
+	</div>
+</div>
+
+<div id="sources">
+	<p style="font-size: 30px;">Sources</p>
+	<ul>
+		<li>GFS SmugMug Archive</li>
+		<li><a href="https://www.nps.gov/chis/learn/nature/island-deer-mouse.htm">https://www.nps.gov/chis/learn/nature/island-deer-mouse.htm</a></li>
+		<li><a href="https://biologycorner.com/worksheets/AP_Lab5_photosynthesis.html">https://biologycorner.com/worksheets/AP_Lab5_photosynthesis.html</a></li>
+		<li><a href="http://santacruz.nrs.ucsb.edu/natural-resources/endemic-vascular-plants/santa-cruz-island-rock-cress">http://santacruz.nrs.ucsb.edu/natural-resources/endemic-vascular-plants/santa-cruz-island-rock-cress</a></li>
+		<li><a href="http://keywordsuggest.org/gallery/1299251.html">http://keywordsuggest.org/gallery/1299251.html </a></li>
+		<li><a href="">http://santacruz.nrs.ucsb.edu/natural-resources/endemic-vascular-plants/santa-cruz-island-rock-cress</a></li>
+		<li>Google Drawing</li>
+	</ul>
+</div>
+</div>
+<script>
+	function scroll() {
+		var elmnt = document.getElementById("body");
+		var a = elmnt.scrollTop;
+		if (a > 190) {
+			document.getElementById("bar").style.position = "fixed";
+			document.getElementById("bar").style.top = "0px";
+		} else {
+			document.getElementById("bar").style.position = "absolute";
+			document.getElementById("bar").style.top = "300px";
+		}
+	}
+</script>
+
+</body>
+</html>
+
+

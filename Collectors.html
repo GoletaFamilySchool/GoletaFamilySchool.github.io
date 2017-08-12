@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+.bar {
+	position: absolute;
+	background-color: lightblue;
+	width: 100%;
+	height: 50px;
+	left: 0px;
+	top: 300px;
+	z-index: 100;
+}
+.menu {
+	position: absolute;
+	background-color: lightblue;
+	height: 50px;
+	left: 50%;
+	margin-left: -320px;
+}
+
+.menu a {
+	display: block;
+	color: black;
+	padding: 15px 16px;
+	text-align: center;
+	text-decoration: none;
+	float: left;
+	height: 20px;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+.menu a:hover {
+	color: gray;
+}
+
+.menu a.active {
+	color: gray;
+}
+
+.dropdown1 {
+	display: inline-block;
+}
+
+.dropdown-content1 {
+	display: none;
+	position: absolute;
+	background-color: #9ec5d6;
+	max-width: 160px;
+	top: 50px;
+	z-index: 1;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown1:hover .dropdown-content1 {
+	display: block;
+}
+
+.dropdown2 {
+	display: inline-block;
+}
+
+.dropdown-content2 {
+	display: none;
+	position: absolute;
+	background-color: #9ec5d6;
+	min-width: 170px;
+	top: 50px;
+	z-index: 1;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	height: 130px;
+}
+
+.dropdown2:hover .dropdown-content2 {
+	display: block;
+}
+
+#GFS_Logo {
+	text-align: center;
+}
+
+#Title {
+	position: absolute;
+	top: 360px;
+	left: 50%;
+	margin-left: -178px;
+}
+
+#I1 {
+ 	position: absolute;
+	top: 360px;
+	left: 50%;
+	margin-left: -450px;
+}
+
+#I2 {
+ 	position: absolute;
+	top: 360px;
+	left: 50%;
+	margin-left: 190px;
+}
+
+#C1 {
+ 	position: absolute;
+	top: 450px;
+	left: 50%;
+	margin-left: -200px;
+	width: 150px;
+}
+
+#body1 {
+ 	position: absolute;
+	top: 550px;
+}
+
+#body2 {
+ 	position: absolute;
+	top: 1200px;
+}
+
+#I3 {
+	position: absolute;
+	top: 1300px;
+	left: 50%;
+	margin-left: -280px;
+	
+}
+
+#I4 {
+	position: absolute;
+	top: 1700px;
+	left: 50%;
+	margin-left: -300px;
+	
+}
+
+#I5 {
+	position: absolute;
+	top: 2200px;
+	left: 50%;
+	margin-left: -190px;
+	
+}
+
+#I6 {
+	position: absolute;
+	top: 2400px;
+	left: 50%;
+	margin-left: 200px;
+	
+}
+
+#I7 {
+	position: absolute;
+	top: 2400px;
+	left: 50%;
+	margin-left: -250px;
+	
+}
+
+#I8 {
+	position: absolute;
+	top: 2800px;
+	left: 50%;
+	margin-left: 200px;
+	
+}
+
+#I9 {
+	position: absolute;
+	top: 2800px;
+	left: 50%;
+	margin-left: -100px;
+	
+}
+
+#I10 {
+	position: absolute;
+	top: 2800px;
+	left: 50%;
+	margin-left: -400px;
+	
+}
+
+#I11 {
+	position: absolute;
+	top: 3200px;
+	left: 50%;
+	margin-left: 200px;
+	
+}
+
+#I12 {
+	position: absolute;
+	top: 3200px;
+	left: 50%;
+	margin-left: -250px;
+	
+}
+
+#Cr {
+	position: absolute;
+	top: 3500px;
+}
+
+</style>
+</head>
+<body id="body" onscroll="scroll()"  style="background-color: #89b0ff">
+ 
+ <!--logo-->
+<div id="GFS_Logo">
+	<img src="GFS.png" width="233" height="184" alt="GFS">
+</div>
+
+<!--Title-->
+<h1 style="text-align: center;">Santa Cruz Island For Kids</h1>
+
+<!--Menu Bar-->
+<div id="bar" class="bar">
+	<div class="menu">
+		<a class="active" href="index.html">Home</a>
+		<a href="Birds.html">Birds</a>
+		<a href="DFMP.html">DFMP</a>
+		<a href="Plants.html">Plants</a>
+		<!--Dropdown feeding groups-->
+		<div class="dropdown1">
+			<a href="javascript:void(0)" class="dropdownbtn1">Feeding Groups</a>
+			<div class="dropdown-content1">
+				<a href="Predators.html">Predators</a>
+				<a href="Shredders.html">Shredders</a>
+				<a href="Collectors.html">Collectors</a>	
+			</div>	
+		</div>
+		<!--Dropdown Geomorphology-->
+		<div class="dropdown2">
+			<a href="javascript:void(0)" class="dropdownbtn2">Geomorphology</a>
+			<div class="dropdown-content2">
+				<a href="Stream%20Ecology.html">Stream Ecology</a>		
+				<a href="Stream%20Geomorphology.html">Stream Geomorphology</a>		
+			</div>
+		</div>
+	</div>
+</div>
+
+<div>
+<div id="Title">
+	<img src="Screen%20Shot%202017-07-17%20at%2010.29.28%20AM.png" width="356" height="84" alt="Screen Shot 2017-07-17 at 10.29.28 AM">
+</div>
+<div id="I1">
+	<img src="Screen%20Shot%202017-07-17%20at%2010.35.12%20AM.png" width="233" height="177" alt="Screen Shot 2017-07-17 at 10.35.12 AM">
+</div>
+<div id="I2">
+	<img src="Screen%20Shot%202017-07-17%20at%2010.35.21%20AM.png" width="248" height="183" alt="Screen Shot 2017-07-17 at 10.35.21 AM">
+</div>
+<div id="C1">
+	<p>This is a caddisfly larvae that has built armor using its net, rocks and other materials</p>
+</div>
+<div id="body1">
+	<p>What is a collector?<br>A collector is a functional feeding group of aquatic animals, also known as macroinvertebrates. Macroinvertebrates that collect food, have some of the same adaptations, and survive in the same way are put in a feeding group. For example, a dragonfly is a predator because it has teeth as an adaptation to eat other animals.</p>
+	<p>What does macroinvertebrate mean?<br> Macro means visible with a naked eye and invertebrate means it has no backbone.</p>
+	<p>How the functional feeding groups eat and what they eat?<br>All the feeding groups eat one specific way. Collectors eat detritus (Detritus are dead leaves, dead plants, and dead animals that are rotting at the bottom of the stream) To eat detritus most of them have little nets. With this adaption, collectors filter the water and collect all the detritus by just moving around. A shredder is a feeding group that shreds detritus. Sometimes when they shred the detritus little particles get pulled away by the current. When a collector is swimming around it finds the detritus, and eats it. Not all collectors have nets on their body, for example the Caddisfly larvae has no net. The caddisfly has four stages in its metamorphosis, which consists of egg, larvae, nymph, and an adult. Another way to say adult is last star.Caddisfly larvae build little nests between rocks to protect them from prey.</p>
+	<p>Where they need to live?<br>Where do collectors live? Collectors live where there is more Dissolved Oxygen. They need dissolved oxygen because they live in the substrate part of the stream where it is hard to get dissolved oxygen. There are 3 different parts of a river continuum, the top part of a river continuum is the head water. The middle part of the river continuum is a stream and the bottom part is the river. Most collectors live in the benthic zone. </p>
+	<p>Adaptations<br>All collectors have an adaptation to live, for example macroinvertebrates are put in a specific feeding group because they have an adaptation that fits in a functional feeding group. A predator has teeth to eat other animals and usually has an aerodynamic body that makes it easier to catch their prey. An example of an adaptation is that a Scud (a type of a collector) has an arrow shaped body that lets it blast through the water.</p>
+	<p>Life cycle.<br>There are two different types of life cycles for collectors; there is incomplete metamorphosis and complete metamorphosis. Incomplete metamorphosis concludes of an egg, nymph, and an adult. Complete metamorphosis concludes of an egg, larvae, pupa, and an adult</p>
+</div>
+<div id="body2">
+	<p>Caddistflies:<a href="https://docs.google.com/drawings/d/1tAA0UZQc3YCHnqOa-xoSX5qkGWhqjpGI2VIwYg3oja0/edit">https://docs.google.com/drawings/d/1tAA0UZQc3YCHnqOa-xoSX5qkGWhqjpGI2VIwYg3oja0/edit</a><br>Scuds: <a href="https://docs.google.com/presentation/d/1RHNnyeDn_S1KgTBNpN3vZxUSeCzFAQrmWqfN1a2ecx0/edit#slide=id.p">https://docs.google.com/presentation/d/1RHNnyeDn_S1KgTBNpN3vZxUSeCzFAQrmWqfN1a2ecx0/edit#slide=id.p</a><br>Scavenger beetle: <a href="https://docs.google.com/drawings/d/1lb0jhXrK0gC_L_UPxMB3RnOvfSZO2PLZttCfnQbiwWk/edit">https://docs.google.com/drawings/d/1lb0jhXrK0gC_L_UPxMB3RnOvfSZO2PLZttCfnQbiwWk/edit</a>
+	</p> 
+</div>
+<div>
+
+</div>
+</div>
+
+<div id="I3">
+<img src="Screen Shot 2017-07-23 at 5.41.48 PM.png" width="579" height="508">
+</div>
+
+<div id="I4">
+	<img src="Screen Shot 2017-07-23 at 5.40.05 PM.png" width="753" height="507">
+</div>
+
+<div id="I5">
+	<img src="Screen Shot 2017-07-23 at 5.39.58 PM.png" width="380" height="88">
+</div>
+
+<div id="I6">
+	<img src="Screen Shot 2017-07-23 at 5.39.50 PM.png" width="149" height="176">
+</div>
+
+<div id="I7">
+	<img src="Screen Shot 2017-07-23 at 5.39.43 PM.png" width="251" height="236">
+</div>
+
+<div id="I8">
+	<img src="Screen Shot 2017-07-23 at 5.39.34 PM.png" width="139" height="190">
+</div>
+
+<div id="I9">
+	<img src="Screen Shot 2017-07-23 at 5.16.21 PM.png" width="161" height="137">
+</div>
+
+<div id="I10">
+	<img src="Screen Shot 2017-07-23 at 5.16.10 PM.png" width="208" height="235">
+</div>
+
+<div id="I11">
+	<img src="Screen Shot 2017-07-23 at 5.16.02 PM.png" width="157" height="154">
+</div>
+
+<div id="I12">
+	<img src="Screen Shot 2017-07-23 at 5.15.55 PM.png" width="214" height="237">
+</div>
+
+<div id="Cr">
+	<p>Soureces:<br>Our field work<br><a href="http://www.nwnature.net/macros/resources.html">http://www.nwnature.net/macros/resources.html</a><br><a href="http://hamiltonharbour.ca/resources/documents/Macroinvertebrates.pdf">http://hamiltonharbour.ca/resources/documents/Macroinvertebrates.pdf</a><br><a href="https://goletafamilyschool.smugmug.com/20162017-School-Year/Science-Camp-Santa-Cruz-Island/i-FSMBF52">https://goletafamilyschool.smugmug.com/20162017-School-Year/Science-Camp-Santa-Cruz-Island/i-FSMBF52</a><br><a href="https://docs.google.com/drawings/d/1lb0jhXrK0gC_L_UPxMB3RnOvfSZO2PLZttCfnQbiwWk/edit">https://docs.google.com/drawings/d/1lb0jhXrK0gC_L_UPxMB3RnOvfSZO2PLZttCfnQbiwWk/edit</a></p>
+</div>
+<script>
+	function scroll() {
+		var elmnt = document.getElementById("body");
+		var a = elmnt.scrollTop;
+		if (a > 190) {
+			document.getElementById("bar").style.position = "fixed";
+			document.getElementById("bar").style.top = "0px";
+		} else {
+			document.getElementById("bar").style.position = "absolute";
+			document.getElementById("bar").style.top = "300px";
+		}
+	}
+</script>
+
+</body>
+</html>
+
+

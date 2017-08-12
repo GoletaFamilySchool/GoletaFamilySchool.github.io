@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+.bar {
+	position: absolute;
+	background-color: lightblue;
+	width: 100%;
+	height: 50px;
+	left: 0px;
+	top: 300px;
+}
+.menu {
+	position: absolute;
+	background-color: lightblue;
+	height: 50px;
+	left: 50%;
+	margin-left: -320px;
+}
+
+.menu a {
+	display: block;
+	color: black;
+	padding: 15px 16px;
+	text-align: center;
+	text-decoration: none;
+	float: left;
+	height: 20px;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+.menu a:hover {
+	color: gray;
+}
+
+.menu a.active {
+	color: gray;
+}
+
+.dropdown1 {
+	display: inline-block;
+}
+
+.dropdown-content1 {
+	display: none;
+	position: absolute;
+	background-color: #9ec5d6;
+	max-width: 160px;
+	top: 50px;
+	z-index: 1;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown1:hover .dropdown-content1 {
+	display: block;
+}
+
+.dropdown2 {
+	display: inline-block;
+}
+
+.dropdown-content2 {
+	display: none;
+	position: absolute;
+	background-color: #9ec5d6;
+	min-width: 170px;
+	top: 50px;
+	z-index: 1;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	height: 130px;
+}
+
+.dropdown2:hover .dropdown-content2 {
+	display: block;
+}
+
+#GFS_Logo {
+	text-align: center;
+}
+
+.In {
+	text-indent: 20px;
+}
+
+#P1 {
+	text-align: center;
+	position: absolute;
+	top: 400px;
+	left: 50%;
+	margin-left: -200px;
+	font-size: 30px;
+	background-color: #43ECFB;
+	border: solid 4px;
+	width: 400px;
+	height: 180px;
+}
+
+#P2 {
+	text-align: center;
+	position: absolute;
+	top: 500px;
+	left: 50%;
+	margin-left: -100px;
+	font-size: 20px;
+	background-color: white;
+	border: solid 4px;
+	width: 200px;
+	height: 60px;
+}
+
+#P3 {
+	position: absolute;
+	top: 600px;
+	left: 50%;
+	margin-left: -200px;
+	font-size: 15px;
+	background-color: #43ECFB;
+	border: solid 4px;
+	width: 390px;
+	height: 110px;
+	padding: 5px 5px;
+}
+
+table {
+	position: absolute;
+	top: 750px;
+	left: 50%;
+	width: 800px;
+	margin-left: -400px;
+	border-collapse: collapse;
+	text-align: center;
+	background-color: #43ECFB;
+}
+
+td, th {
+	border: solid 1px black;	
+	height: 50px;
+}
+	
+#P4 {
+	position: absolute;
+	top: 1122px;
+	left: 50%;
+	margin-left: -400px;
+	font-size: 12px;
+	background-color: #43ECFB;
+	width: 200px;
+	height: 453px;
+	padding: 5px 5px;
+}	
+
+#I1 {
+	position: absolute;
+	top: 1122px;
+	left: 50%;
+	margin-left: -190px;
+}	
+
+#P5 {
+	text-align: center;
+	position: absolute;
+	top: 1515px;
+	left: 50%;
+	margin-left: -190px;
+	background-color: #00A8EB;
+	width: 179px;
+	height: 60px;
+	padding: 5px 5px;
+}	
+
+#I2 {
+	position: absolute;
+	top: 1122px;
+	left: 50%;
+	margin-left: -1px;
+}	
+
+#P6 {
+	text-align: center;
+	position: absolute;
+	top: 1475px;
+	left: 50%;
+	margin-left: -1px;
+	background-color: #43ECFB;
+	width: 144px;
+	height: 100px;
+	padding: 5px 5px;
+}	
+
+#P7 {
+	position: absolute;
+	top: 1122px;
+	left: 50%;
+	margin-left: 153px;
+	font-size: 15px;
+	background-color: #43ECFB;
+	width: 237px;
+	height: 450px;
+	padding: 5px 5px;
+}	
+
+#I3 {
+	position: absolute;
+	top: 1380px;
+	left: 50%;
+	margin-left: 153px;
+}	
+
+#P8 {
+	text-align: center;
+	position: absolute;
+	top: 1515px;
+	left: 50%;
+	margin-left: 153px;
+	background-color: #00A8EB;
+	width: 160px;
+	height: 60px;
+	padding: 5px 5px;
+}	
+
+#P9 {
+	position: absolute;
+	top: 1585px;
+	left: 50%;
+	margin-left: -400px;
+	background-color: #00A8EB;
+	width: 160px;
+	height: 200px;
+	padding: 5px 5px;
+}	
+
+#P10 {
+	font-size: 13px;
+	position: absolute;
+	top: 1585px;
+	left: 50%;
+	margin-left: -230px;
+	background-color: #43ECFB;
+	width: 160px;
+	height: 200px;
+	padding: 5px 5px;
+}	
+
+#I4 {
+	position: absolute;
+	top: 1584px;
+	left: 50%;
+	margin-left: -60px;
+}
+
+#P11 {
+	text-align: center;
+	position: absolute;
+	top: 1710px;
+	left: 50%;
+	margin-left: -60px;
+	background-color: #00A8EB;
+	width: 173px;
+	height: 75px;
+	padding: 5px 5px;
+}
+
+#P12 {
+	font-size: 17px;
+	position: absolute;
+	top: 1582px;
+	left: 50%;
+	margin-left: 123px;
+	background-color: #43ECFB;
+	width: 267px;
+	height: 200px;
+	padding: 5px 5px;
+}
+
+#I5 {
+	position: absolute;
+	top: 1790px;
+	left: 50%;
+	margin-left: -400px;
+}
+
+#I6 {
+	position: absolute;
+	top: 1790px;
+	left: 50%;
+	margin-left: -76px;
+}
+
+#B {
+	position: absolute; 
+	top: 1789px; 
+	left: 50%; 
+	margin-left: -100px;
+	background-color: #43ECFB; 
+	height: 245px;
+	width: 500px;	
+	z-index: -1;
+}
+</style>
+</head>
+<body id="body" onscroll="scroll()">
+ 
+ <!--logo-->
+<div id="GFS_Logo">
+	<img src="GFS.png" width="233" height="184" alt="GFS">
+</div>
+
+<!--Title-->
+<h1 style="text-align: center;">Santa Cruz Island For Kids</h1>
+
+<!--Menu Bar-->
+<div id="bar" class="bar">
+	<div class="menu">
+		<a href="index.html">Home</a>
+		<a href="Birds.html">Birds</a>
+		<a href="DFMP.html">DFMP</a>
+		<a href="Plants.html">Plants</a>
+		<!--Dropdown feeding groups-->
+		<div class="dropdown1">
+			<a href="javascript:void(0)" class="dropdownbtn1">Feeding Groups</a>
+			<div class="dropdown-content1">
+				<a class="active" href="Predators.html">Predators</a>
+				<a href="Shredders.html">Shredders</a>
+				<a href="Collectors.html">Collectors</a>	
+			</div>	
+		</div>
+		<!--Dropdown Geomorphology-->
+		<div class="dropdown2">
+			<a href="javascript:void(0)" class="dropdownbtn2">Geomorphology</a>
+			<div class="dropdown-content2">
+				<a href="Stream%20Ecology.html">Stream Ecology</a>		
+				<a href="Stream%20Geomorphology.html">Stream Geomorphology</a>		
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="P1">
+	<p>Aquatic Predator Project</p>
+</div>
+
+<div id="P2">
+	<p>What We Did</p>
+</div>
+
+<div id="P3">
+	<p class="In">This chart shows the data we have collected about what the difference is between the macroinvertebrates and the water quality in different parts of the stream. We have taken two different streams, and collected  data from  streams to compare what macroinvertebrates there are in the different water quality.</p>
+</div>
+
+<table>
+	<tr>
+    	<th>Descripiton of Area</th>
+        <th>Predator Name</th>
+        <th>Water quality</th>
+        <th>Date</th>
+    </tr>
+    <tr>
+    	<td>Narrow Lot's of brush</td>
+        <td>Ameletiel minnow Mayfly</td>
+        <td>6ph</td>
+        <td>5-9-17</td>
+    </tr>
+    <tr>
+    	<td>Narrow Lot's of brush</td>
+        <td>Common Stonefly0</td>
+        <td>6px</td>
+        <td>5-9-17</td>
+     </tr>
+     <tr>
+     	<td>Narrow Lot's of brush</td>
+        <td>Hellgrammites</td>
+        <td>6ph</td>
+        <td>5-9-17</td>
+     </tr>
+     <tr>
+     	<td>Narrow Lot's of brush</td>
+     	<td>Whirlygig</td>
+        <td>6ph</td>
+        <td>5-9-17</td>
+     </tr>
+     <tr>
+     	<td>Deep Wide Rocky</td>
+        <td>Narrow Winged Damselfly</td>
+        <td>7ph</td>
+        <td>5-11-17</td>
+     </tr>
+     <tr>
+     	<td>Deep Wide Rocky</td>
+        <td>Skimmer Dragonfly</td>
+        <td>7ph</td>
+        <td>5-11-17</td>
+     </tr> 
+</table>
+
+<div id="P4">
+	<p>Aquatic Predator Project <br><br><b>Our question id:</b>How do predators affect water quality and how does it affect them?<br><br><b>Who is doing what:<br>Both:<br></b>1. Testing water quality<br>2. Counting predators<br><br><b>Materials:</b><br>1. Water testing kit<br>2. Predator identification book<br><br><b>How will we collect the data:</b><br>We used the table above to record our research.<br><br><br>Water Quality<br><br>Only specific macroinvertebrates can survive in different types of water quality. Some are tolerant to any pollution that may be in the stream. But some macroinvertebrates will die the second that  any type of pollution enters the water. We’ve noticed that most of the macroinvertebrates that we found were intolerant to pollution.</p>
+</div>
+
+<div id="P5">
+	<h2>Hellgramite</h2>
+</div>
+
+<div id="I1">
+	<img src="Screen Shot 2017-07-23 at 12.24.30 PM.png" width="189" height="394">	
+</div>
+
+<div id="I2">
+  <img src="Screen Shot 2017-07-23 at 12.24.39 PM.png" width="154" height="364">
+</div>
+
+<div id="P6">
+	<h2>Ameletiel Minnow Mayfly</h2>
+</div>
+
+<div id="P7">
+	<h3>What were we curious about?</h3><p>When we went to the field, we really wanted to see what types of predators we could find in the different natural stream environments. This study is important because it shows the balance between predators and prey on the food chain. This is also important because when we researched the islands on line, we did not find much information.
+So our research will change lack of information online.</p>
+</div>
+
+<div id="I3">
+  <img src="Screen Shot 2017-07-23 at 12.24.48 PM.png" width="170" height="147">
+</div>
+
+<div id="P8">
+	<h2>Whirlygig</h2>
+</div>
+
+<div id="P9">
+<b>Notes from the field</b>
+<p>&bull; The hellgrammite ate the minnow mayfly and multiple small winter stoneflies<br>
+&bull; The hellgrammite ate other predators.<br>
+&bull; The hellgrammite looks like a scorpion when it eats. <br></p>
+</div>
+
+<div id="P10">
+	<p>We were wondering if a predator would eat a predator. So we scooped the Hellgramite into a small plastic cup with water from the stream, and put a small winter stonefly into the cup with the Hellgramite. The Hellgramite gladly ate the little predator. So in conclusion, predators eat predators.</p>
+</div>
+
+<div id="I4">
+	<img src="Screen Shot 2017-07-23 at 12.24.00 PM.png" width="183" height="201">
+</div>
+
+<div id="P11">
+	<h2>Common Stonefly</h2>
+</div>
+
+<div id="P12">
+	<p>We found the macroinvertebrates by shoving a small net under the water. We found more animals under the protection of the plants in the water.</p>
+
+</div>
+
+<div id="I5">
+	<img src="Screen Shot 2017-07-23 at 12.23.50 PM.png" width="325" height="244">
+</div>
+
+<div id="I6">
+	<img src="Screen Shot 2017-07-23 at 12.24.17 PM.png" width="165" height="192">
+</div>
+
+<div id="B">
+asdjflasjl;</div>
+<script>
+	function scroll() {
+		var elmnt = document.getElementById("body");
+		var a = elmnt.scrollTop;
+		if (a > 190) {
+			document.getElementById("bar").style.position = "fixed";
+			document.getElementById("bar").style.top = "0px";
+		} else {
+			document.getElementById("bar").style.position = "absolute";
+			document.getElementById("bar").style.top = "300px";
+		}
+	}
+</script>
+
+</body>
+</html>
+
+

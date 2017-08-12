@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+.bar {
+	position: absolute;
+	background-color: lightblue;
+	width: 100%;
+	height: 50px;
+	left: 0px;
+	top: 300px;
+	z-index: 100;
+}
+.menu {
+	position: absolute;
+	background-color: lightblue;
+	height: 50px;
+	left: 50%;
+	margin-left: -320px;
+}
+
+.menu a {
+	display: block;
+	color: black;
+	padding: 15px 16px;
+	text-align: center;
+	text-decoration: none;
+	float: left;
+	height: 20px;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+.menu a:hover {
+	color: gray;
+}
+
+.menu a.active {
+	color: gray;
+}
+
+.dropdown1 {
+	display: inline-block;
+}
+
+.dropdown-content1 {
+	display: none;
+	position: absolute;
+	background-color: #9ec5d6;
+	max-width: 160px;
+	top: 50px;
+	z-index: 1;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown1:hover .dropdown-content1 {
+	display: block;
+}
+
+.dropdown2 {
+	display: inline-block;
+}
+
+.dropdown-content2 {
+	display: none;
+	position: absolute;
+	background-color: #9ec5d6;
+	min-width: 170px;
+	top: 50px;
+	z-index: 1;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	height: 130px;
+}
+
+.dropdown2:hover .dropdown-content2 {
+	display: block;
+}
+
+#GFS_Logo {
+	text-align: center;
+}
+
+#I1 {
+	position: absolute;
+	top: 360px;
+	left: 50%;
+	margin-left: -280px;
+}
+
+#P1 {
+	position: absolute;
+	top: 360px;
+	width: 300px;
+	left: 50%;
+	margin-left: 80px;
+	padding: 10px;
+	border-color: #690;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 4px;
+}
+
+
+#I2 {
+	position: absolute;
+	top: 600px;
+	left: 50%;
+	margin-left: -280px;
+}
+
+#P2 {
+	position: absolute;
+	top: 670px;
+	width: 300px;
+	left: 50%;
+	margin-left: 80px;
+	padding: 10px;
+	border-color: #39F;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 4px;
+}
+
+#H1 {
+	text-align: center;
+	position: absolute;
+	top: 580px;
+	width: 300px;
+	left: 50%;
+	margin-left: 80px;
+	padding: 10px;
+	border-color: #39F;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 4px;	
+}
+
+#I3 {
+	position: absolute;
+	top: 930px;
+	left: 50%;
+	margin-left: -280px;
+	-webkit-transform:rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+    transform: rotate(9deg);
+}
+
+#P3 {
+	position: absolute;
+	top: 1000px;
+	width: 300px;
+	left: 50%;
+	margin-left: 80px;
+	padding: 10px;
+	border-color: #F90;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 4px;
+}
+
+#H2 {
+	text-align: center;
+	position: absolute;
+	top: 910px;
+	width: 300px;
+	left: 50%;
+	margin-left: 80px;
+	padding: 10px;
+	border-color: #F90;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 4px;	
+}
+
+#I4 {
+	position: absolute;
+	top: 1300px;
+	left: 50%;
+	margin-left: 80px;
+	-webkit-transform:rotate(-9deg);
+    -moz-transform: rotate(-9deg);
+    -ms-transform: rotate(-9deg);
+    -o-transform: rotate(-9deg);
+    transform: rotate(-9deg);
+}
+
+#P4 {
+	position: absolute;
+	top: 1350px;
+	width: 300px;
+	left: 50%;
+	margin-left: -280px;
+	padding: 10px;
+	border-color: #066;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 4px;
+}
+
+#H3 {
+	text-align: center;
+	position: absolute;
+	top: 1210px;
+	width: 300px;
+	left: 50%;
+	margin-left: -280px;
+	padding: 10px;
+	border-color: #066;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 4px;	
+}
+
+#I5 {
+	position: absolute;
+	top: 1650px;
+	left: 50%;
+	margin-left: -280px;
+}
+
+#P5 {
+	padding: 10px;
+	border-color: #096;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 4px;
+}
+
+#H4 {
+	
+	padding: 10px;
+	border-color: #096;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 4px;	
+}
+
+#Pr {
+	text-align: center;
+	position: absolute;
+	top: 1610px;
+	width: 300px;
+	left: 50%;
+	margin-left: 80px;
+	-webkit-transform:rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate-9deg);
+    transform: rotate(9deg);	
+}
+
+#I6 {
+	position: absolute;
+	top: 2000px;
+	left: 50%;
+	margin-left: -280px;
+}
+
+#P6 {
+	padding: 10px;
+	border-color: #399;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 4px;
+}
+
+#H5 {
+	
+	padding: 10px;
+	border-color: #399;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 4px;	
+}
+
+#Pl {
+	text-align: center;
+	position: absolute;
+	top: 2000px;
+	width: 300px;
+	left: 50%;
+	margin-left: 80px;
+	-webkit-transform:rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate-9deg);
+    transform: rotate(9deg);	
+}
+
+#I7 {
+	position: absolute;
+	top: 2400px;
+	left: 50%;
+	margin-left: 80px;
+	-webkit-transform:rotate(6deg);
+    -moz-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+    transform: rotate(6deg);
+}
+
+
+#C1 {
+	text-align: left;
+	position: absolute;
+	top: 2600px;
+	left: 50%;
+	margin-left: 80px;
+	width: 300px;
+	-webkit-transform:rotate(6deg);
+    -moz-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+    transform: rotate(6deg);
+}
+
+#P7 {
+	position: absolute;
+	top: 2415px;
+	width: 300px;
+	left: 50%;
+	margin-left: -280px;
+	padding: 10px;
+	border-color: #FF0;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 4px;
+}
+
+#H6 {
+	text-align: center;
+	position: absolute;
+	top: 2310px;
+	width: 300px;
+	left: 50%;
+	margin-left: -280px;
+	padding: 10px;
+	border-color: #FF0;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 4px;	
+}
+
+#P8 {
+	position: absolute;
+	top: 2770px;
+	width: 300px;
+	left: 50%;
+	margin-left: 80px;
+	padding: 10px;
+	border-color: #060;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 4px;
+}
+
+#H7 {
+	text-align: center;
+	position: absolute;
+	top: 2650px;
+	width: 300px;
+	left: 50%;
+	margin-left: 80px;
+	padding: 10px;
+	border-color: #060;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 4px;	
+}
+
+#I8 {
+	position: absolute;
+	top: 2750px;
+	left: 50%;
+	margin-left: -280px;
+}
+
+#P9 {
+	position: absolute;
+	top: 3070px;
+	width: 300px;
+	left: 50%;
+	margin-left: -280px;
+	padding: 10px;
+	border-color: #9CF;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 4px;
+}
+
+#H8 {
+	text-align: center;
+	position: absolute;
+	top: 2950px;
+	width: 300px;
+	left: 50%;
+	margin-left: -280px;
+	padding: 10px;
+	border-color: #9CF;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 4px;	
+}
+
+#I9 {
+	position: absolute;
+	top: 3050px;
+	left: 50%;
+	margin-left: 200px;
+}
+
+#P10 {
+	position: absolute;
+	top: 3370px;
+	width: 300px;
+	left: 50%;
+	margin-left: -280px;
+	padding: 10px;
+	border-color: #639;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 4px;
+}
+
+#H9 {
+	text-align: center;
+	position: absolute;
+	top: 3250px;
+	width: 300px;
+	left: 50%;
+	margin-left: -280px;
+	padding: 10px;
+	border-color: #639;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 4px;	
+}
+
+#I10 {
+	position: absolute;
+	top: 3350px;
+	left: 50%;
+	margin-left: 200px;
+	-webkit-transform:rotate(6deg);
+    -moz-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+    transform: rotate(6deg);
+}
+
+#F1 {
+	position: absolute;
+	top: 3650px;
+	left: 50%;
+	margin-left: -300px;
+	z-index: 20;	
+	
+}
+</style>
+</head>
+<body id="body" onscroll="scroll()">
+ 
+ <!--logo-->
+<div id="GFS_Logo">
+	<img src="GFS.png" width="233" height="184" alt="GFS">
+</div>
+
+<!--Title-->
+<h1 style="text-align: center;">Santa Cruz Island For Kids</h1>
+
+<!--Menu Bar-->
+<div id="bar" class="bar">
+	<div class="menu">
+		<a class="active" href="index.html">Home</a>
+		<a href="Birds.html">Birds</a>
+		<a href="DFMP.html">DFMP</a>
+		<a href="Plants.html">Plants</a>
+		<!--Dropdown feeding groups-->
+		<div class="dropdown1">
+			<a href="javascript:void(0)" class="dropdownbtn1">Feeding Groups</a>
+			<div class="dropdown-content1">
+				<a href="Predators.html">Predators</a>
+				<a href="Shredders.html">Shredders</a>
+				<a href="Collectors.html">Collectors</a>	
+			</div>	
+		</div>
+		<!--Dropdown Geomorphology-->
+		<div class="dropdown2">
+			<a href="javascript:void(0)" class="dropdownbtn2">Geomorphology</a>
+			<div class="dropdown-content2">
+				<a href="Stream%20Ecology.html">Stream Ecology</a>		
+				<a href="Stream%20Geomorphology.html">Stream Geomorphology</a>		
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="I1">
+	<img src="Screen Shot 2017-07-18 at 9.35.13 AM.png" width="300" height="228">
+</div>
+<div id="P1">
+	<p>Goleta Family School  has multi aged classes. Every year the fourth, fifth and sixth grades go on a science camp.  In 2017,  we went to Santa Cruz Island and stayed at a UCSB Research Center for 5 days to collect enough research to make our website page for you to learn about all eight of our topics.
+This experience was full of research, learning and unforgettable memories...</p>
+</div>
+
+<div id="I2">
+	<img src="Screen Shot 2017-07-18 at 9.35.02 AM.png" width="298" height="229">
+</div>
+
+<h1 id="H1">Birds</h1>
+<div id="P2">
+	<p>This is a island blue scrub jay. The island blue scrub jay is the only bird species to never have ranged to the mainland. From 2007, a team of researchers have studied the jays behavior. The motivation for this research was the risks of the jays viability posed to its limited range and population size, which is estimated to be about 3,000 individuals.
+credit:</p><a href="http://santacruz.nrs.ucsb.edu/natural-resources/island-scrub-jay">http://santacruz.nrs.ucsb.edu/natural-resources/island-scrub-jay</a>
+</div>
+
+<div id="I3">
+	<img src="Screen Shot 2017-07-18 at 9.34.50 AM.png" width="327" height="180">
+</div>
+
+<h1 id="H2">Shredders</h1>
+<div id="P3">
+	<p>The female can lay up to one thousand eggs. It will fly over the water and drop the eggs in the water.They have simple <a href="https://en.wikipedia.org/wiki/Insect_mouthparts">mouthparts</a> with chewing <a href="https://en.wikipedia.org/wiki/Mandible_(arthropod)">mandibles</a>, long, multiple-segmented <a href="https://en.wikipedia.org/wiki/Antenna_(biology)">antennae</a>, large <a href="https://en.wikipedia.org/wiki/Compound_eye">compound eyes</a>, and two or three <a href="https://en.wikipedia.org/wiki/Ocelli">ocelli</a>. <a href="https://en.wikipedia.org/wiki/Plecoptera">https://en.wikipedia.org/wiki/Plecoptera</a>
+</p>
+</div>
+
+<div id="I4">
+	<img src="Screen Shot 2017-07-18 at 9.34.29 AM.png" width="240" height="205">
+</div>
+
+<h1 id="H3">DragonFly mercury project</h1>
+<div id="P4">
+	<p>The picture to the left is of mercury. Mercury is a substance that is in anything and everything. It’s in you hair, lamps,  jelewery,  your clothing and much more! Too much mercury can be bad for the environment,  and can cause harm to humans and wildlife, so scientists are conducting an experiment where they collect dragonfly larvae to sample them for mercury levels.</p>
+</div>
+
+<div id="I5">
+	<img src="Screen Shot 2017-07-18 at 9.34.14 AM.png" width="266" height="191">
+</div>
+
+<div id="Pr">
+<h1 id="H4">Predators</h1>
+<div id="P5">
+	<p>On the top left there is a picture a hellgrammite they are a centipede like creature that often lives in in streams or rivers. On the top right there is a dragonfly larvae they have a lot of mercury in them. On the bottom left there is a dragonfly adult on the bottom right there is a damselfly. 
+</p>
+</div>
+</div>
+
+<div id="I6">
+	<img src="Screen Shot 2017-07-18 at 9.34.05 AM.png" width="227" height="170">
+</div>
+
+<div id="Pl">
+<h1 id="H5">Plants</h1>
+<div id="P6">
+	<p>The channel island national park supports a variety of different plants including many rare, relict, and endemic species, as well as many nonnative species. Plants that are rare to the island, may have a wider distribution in the mainland. 
+Credits:<a href="https://www.nps.gov/chis/learn/nature/plants.htm">https://www.nps.gov/chis/learn/na<br>ture/plants.htm</a>
+</p>
+</div>
+</div>
+
+<div id="I7">
+	<img src="Screen Shot 2017-07-18 at 9.33.50 AM.png" width="256" height="192">
+</div>
+
+<h1 id="H6">Geomorphology</h1>
+<div id="P7">
+	<p>Geomorphology is basicly just change over time. For example, when a mountain builds up its called  geomorphology but also when water pushes against rock and erodes it, it's also called geomorphology.
+</p>
+</div>
+
+<div id="C1">
+<p>PhotoCredits:https://watershed.ucd<br>avis.edu/education/classes/files/imag<br>es/flogs/landslide.jpg</p>
+</div>
+
+<div id="I8">
+	<img src="Screen Shot 2017-07-18 at 9.33.34 AM.png" width="242" height="182">
+</div>
+
+<h1 id="H7">Stream ecology</h1>
+<div id="P8">
+	<p>tream ecology is the health of the stream, like how much pollution is in the water and the temperature of the water. The delicate insects like mayflies can only survive in unpolluted water and if the water in their stream is polluted they will then will die.https://serc.si.edu/research/research-topics/biodiversity-conservation/stream-ecology
+</p>
+</div>
+
+<div id="I9">
+	<img src="Screen Shot 2017-07-18 at 9.33.22 AM.png" width="128" height="119">
+</div>
+
+<h1 id="H8">Collectors (scud)</h1>
+<div id="P9">
+	<p>A scud is one of the most popular food sources for trout. The scud is in the class creation. The mail will also carry the female on his back. 
+</p>
+</div>
+
+<div id="I10">
+	<img src="Screen Shot 2017-07-18 at 9.33.09 AM.png" width="145" height="190">
+</div>
+
+<h1 id="H9">Island Packers</h1>
+<div id="P10">
+	<p>A special thanks to Island Packers, who safely transported us to the island and then back to the mainland. For more information about island packers, visit <a href="http://islandpackers.com/">http://islandpackers.com/</a>
+</p>
+</div>
+<iframe id="F1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33690.01223379094!2d-119.77293053029686!3d33.76671078314359!2m3!1f5.894206549118411!2f34.39298425025912!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x80e8e6f4474dc94b%3A0x27e7db6bea731e23!2sSanta+Cruz+Island!5e1!3m2!1sen!2sus!4v1500575769686" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<script>
+	function scroll() {
+		var elmnt = document.getElementById("body");
+		var a = elmnt.scrollTop;
+		if (a > 190) {
+			document.getElementById("bar").style.position = "fixed";
+			document.getElementById("bar").style.top = "0px";
+		} else {
+			document.getElementById("bar").style.position = "absolute";
+			document.getElementById("bar").style.top = "300px";
+		}
+	}
+</script>
+
+</body>
+</html>
+
+
